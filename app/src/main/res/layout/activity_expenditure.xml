@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Expenditure">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/LoginBanner"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/circle"
+                    android:contentDescription="@string/ImageCircle"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_create_black_24dp"
+                    android:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:textSize="22sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white"
+                    android:text="@string/iexpenditure"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_below="@+id/linearLayout"
+                android:rotation="45"
+                android:layout_marginTop="-10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/square"
+                android:layout_centerHorizontal="true" />
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1">
+
+                <ImageView
+                    android:id="@+id/imgView_userIcone"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@color/LoginBanner"
+                    android:contentDescription="image One"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_person_black_24dp"
+                    android:tint="@color/white" />
+
+
+                <EditText
+                    android:hint="Amount"
+                    android:inputType="number"
+                    android:paddingStart="20dp"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/imgView_userIcone"
+                    android:layout_toRightOf="@+id/imgView_userIcone"
+                    android:background="@color/editTextBG"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout1">
+
+
+
+                <RadioButton
+                    android:id="@+id/rdo_akiba"
+                    android:textSize="15dp"
+                    android:text="Akiba"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgView_typeIcone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBG"/>
+
+                <RadioButton
+                    android:id="@+id/rdo_matumizi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="43dp"
+                    android:background="@color/editTextBG"
+                    android:text="Matumizi"
+                    android:textSize="15dp" />
+
+                <RadioButton
+                    android:id="@+id/rdo_uwekezaji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="85dp"
+                    android:background="@color/editTextBG"
+                    android:text="Uwezekaji"
+                    android:textSize="15dp" />
+
+
+                <RadioButton
+                    android:id="@+id/rdo_sadaka"
+                    android:textSize="15dp"
+                    android:text="Sadaka na Michango"
+                    android:layout_marginTop="125dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/editTextBG"/>
+
+            </RelativeLayout>
+
+            <Button
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="370dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/LoginBanner"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

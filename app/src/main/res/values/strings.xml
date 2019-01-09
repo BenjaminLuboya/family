@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Familia Bora</string>
+    <string name="welcome">KARIBU NA UJENGE FAMILIA BORA</string>
+    <string name="income">INCOME</string>
+    <string name="iexpenditure">EXPENDITURE</string>
+    <string name="ImageCircle">Its a circle around the pen</string>
+
+
+</resources>
