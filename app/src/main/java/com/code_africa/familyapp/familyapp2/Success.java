@@ -5,6 +5,7 @@ public class Success {
     public String name;
     public String id;
     public String email;
+    public String type;
     public String created_at;
     public String updated_at;
 }

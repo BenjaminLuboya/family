@@ -64,8 +64,9 @@ public class Log_In extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Dashboard = new Intent(Log_In.this, Dashboard.class);
-                startActivity(Dashboard);
+
+                userLogin();
+
             }
         });
     }
@@ -112,7 +113,7 @@ public class Log_In extends AppCompatActivity {
                         editor.putString(token,received.success.token);
                         editor.commit();
                         Log.d("token",sharedpreferences.getString(token,null));
-                        Toast.makeText(getBaseContext().getApplicationContext(),"Loged In",Toast.LENGTH_LONG).show();
+                        Toast.makeText(getBaseContext().getApplicationContext(),"Logged In",Toast.LENGTH_LONG).show();
                         progressBar.setVisibility(View.INVISIBLE);
                         Intent i = new Intent(Log_In.this, Dashboard.class);
                         startActivity(i);
