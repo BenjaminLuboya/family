@@ -34,21 +34,22 @@
             android:layout_gravity="center">
 
             <Button
-                android:layout_margin="10dp"
+                android:id="@+id/dashboard"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="DASHBOARD"
+                android:layout_margin="10dp"
                 android:background="@drawable/buttonstylepink"
-                android:textColor="#fff"/>
+                android:text="DASHBOARD"
+                android:textColor="#fff" />
 
             <Button
-                android:id="@+id/btnCreateLogOut"
-                android:layout_margin="10dp"
+                android:id="@+id/logoutBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/buttonstyle2"
                 android:text="Log Out"
-                android:textColor="#fff"
-                android:background="@drawable/buttonstyle2"/>
+                android:textColor="#fff" />
 
         </LinearLayout>
     </LinearLayout>
