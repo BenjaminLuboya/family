@@ -87,16 +87,17 @@
 
 
                 <EditText
+                    android:id="@+id/incomeAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgView_userIcone"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/imgView_userIcone"
+                    android:background="@color/editTextBG"
                     android:hint="Income"
                     android:inputType="number"
                     android:paddingStart="20dp"
-                    android:textSize="15sp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignBottom="@+id/imgView_userIcone"
-                    android:layout_toRightOf="@+id/imgView_userIcone"
-                    android:background="@color/editTextBG"/>
+                    android:textSize="15sp" />
 
             </RelativeLayout>
 
@@ -120,30 +121,40 @@
                     android:tint="@color/white" />
 
 
-
                 <EditText
-                    android:id="@+id/txtIncome"
-                    android:hint="Choose Type"
-                    android:paddingLeft="20dp"
-                    android:textSize="15sp"
+                    android:id="@+id/incomeType"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
                     android:layout_alignBottom="@+id/imgView_typeIcone"
+                    android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/imgView_typeIcone"
-                    android:background="@color/editTextBG"/>
+                    android:background="@color/editTextBG"
+                    android:hint="Choose Type"
+                    android:paddingLeft="20dp"
+                    android:textSize="15sp" />
 
             </RelativeLayout>
 
             <Button
-                android:text="Submit"
-                android:textColor="@color/white"
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:layout_marginTop="260dp"
-                android:layout_width="match_parent"
+                android:background="@color/LoginBanner"
+                android:text="Submit"
+                android:textColor="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@color/LoginBanner"/>
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="138dp"
+                android:visibility="invisible" />
 
         </RelativeLayout>
 
