@@ -84,12 +84,12 @@ public class Income extends AppCompatActivity {
 
 
 
-        AndroidNetworking.post("http://10.0.3.2/FBA/public/api/income")
+        AndroidNetworking.get("http://familia.learningmindsafrica.co.tz/api/income")
                 .addHeaders("Authorization", "Bearer " + Token)
                 .addHeaders("Content-Type", "application/x-www-form-urlencoded")
                 .addHeaders("Accept", "application/json")
-                .addBodyParameter("amount",incomeAmount.getText().toString() )
-                .addBodyParameter("type",incomeType.getText().toString() )
+                .addQueryParameter("amount",incomeAmount.getText().toString() )
+                .addQueryParameter("type",incomeType.getText().toString() )
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsObject(LoginReceived.class, new ParsedRequestListener<LoginReceived>() {

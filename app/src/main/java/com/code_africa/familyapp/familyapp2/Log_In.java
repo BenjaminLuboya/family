@@ -99,7 +99,7 @@ public class Log_In extends AppCompatActivity {
 
 
 
-        AndroidNetworking.post("http://10.0.3.2/FBA/public/api/login")
+        AndroidNetworking.post("http://familia.learningmindsafrica.co.tz/api/login")
                 .addBodyParameter("email",editTextUsername.getText().toString() )
                 .addBodyParameter("password",editTextPassword.getText().toString() )
                 .setPriority(Priority.MEDIUM)

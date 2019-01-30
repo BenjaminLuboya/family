@@ -99,13 +99,13 @@ public class Expenditure extends AppCompatActivity {
 
 
 
-        AndroidNetworking.post("http://10.0.3.2/FBA/public/api/expenditure")
+        AndroidNetworking.get("http://familia.learningmindsafrica.co.tz/api/expenditure")
                 .addHeaders("Authorization", "Bearer " + Token)
                 .addHeaders("Content-Type", "application/x-www-form-urlencoded")
                 .addHeaders("Accept", "application/json")
-                .addBodyParameter("amount", expenditureAmount.getText().toString() )
-                .addBodyParameter("name",expenditureName.getText().toString() )
-                .addBodyParameter("type",typeSelected)
+                .addQueryParameter("amount", expenditureAmount.getText().toString() )
+                .addQueryParameter("name",expenditureName.getText().toString() )
+                .addQueryParameter("type",typeSelected)
                 .setPriority(Priority.MEDIUM)
                 .build()
                 .getAsObject(LoginReceived.class, new ParsedRequestListener<LoginReceived>() {
